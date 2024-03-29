@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h1>
+        Lab Record Generator
+    </h1>
+    <form>
+        <!--wrap around a div-->
+        <label for="Program_button" name="Program_button">Add program</label>
+        <input id="Program_button" type="button">
+        <div id="Program" class="Program">
+            <fieldset>
+                <div>
+                    <label for="Pno" name="Pno">Program Number</label>
+                    <input type="number" id="Pno" ></input>
+                </div>
+                <div>
+                    <label for="Date" name="Date">Date</label>
+                    <input id="Date" type="date" name="Date"></input>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="Ptitle" name="Ptitle">Title</label>
+                    <input id="Ptitle" type="text" name="Ptitle"></input>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="Problem" name="Problem">Problem</label>
+                    <input id="Problem" type="text" name="Problem"></input>
+                </div>
+            </fieldset>
+            <!--wrap whole classes in a div around this fieldset-->
+            <fieldset id="complete_classes" class="complete_classes">
+                <label>Class Design</label>
+                <div>
+                    <label for="add_class" name="add_class">Click to add more classes </label>
+                    <input id="add_class" type="button">
+                </div>
+                <div id="classes" class="classes">
+                    <fieldset id="CD_field" class="CD_field">
+                        <div>
+                            <label for="Class_name" name="Class_name">Class Name</label>
+                            <input id="Class_name" type="text">
+                        </div>
+                        <label>Properties</label>
+                        <div id="prop">
+                            <label for="prop_button" name="prop_button">Add Property</label>
+                            <input id="prop_button" type="button">
+                            <div id="props" class="props">
+                                <input id="props_list" type="text">
+                            </div>
+                        </div>
+                        <label>Methods: </label>
+                        <label for="meth_button" name="meth_button">click to Add methods</label>
+                        <input id="meth_button" type="button">
+                        <div id="complete_meths" class="complete_meths">
+                            <div id="meth" class="meth">
+                                <div id="meth_name">
+                                    <label for="meth_name" name="meth_name">Name:</label>
+                                    <input id="meth_name" type="text">
+                                </div>
+                                <div id="meth_desc">
+                                    <label for="meth_desc" name="meth_desc">Description: </label>
+                                    <textarea id="meth_desc" name="meth_desc"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
